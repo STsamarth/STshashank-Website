@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STshashank's - Official Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ST Shashank</h1>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <!-- Add a circular image -->
+            <div class="profile-pic">
+                <img src="stshashank.jpg" alt="Artist Image">
+            </div>
+            <h2>Welcome to<br>ST Shashank's Official Website</h2>
+            <p>
+                YouTube content creator and famous hindi songs covers singer
+            </p>
+            <a href="#music" class="btn">Explore Music</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container" id="about">
+        <h2>About ST Shashank</h2>
+        <p>
+            Hello, Im Shashank Tripathi and im 22 years old, from Jabalpur, Madhya Pradesh, India. I upload latest hindi songs and covers in my social media platforms, you can check out my instagram, facebook and youtube channel. I can also play guitar and piano.
+        </p>
+    </section>
+
+    <!-- Music Section -->
+    <section class="dark-section" id="music">
+        <div class="container">
+            <h2>Latest Songs</h2>
+            <div class="music-grid">
+                <!-- Spotify Song 1 -->
+                <div class="music-card">
+                    <iframe src="https://open.spotify.com/embed/track/5CuAwsef7IJrFPbAgx4Pf0"
+                        width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <h3>Dekho ye dil - ST Shashank</h3>
+                </div>
+
+                <!-- Spotify Song 2 -->
+                <div class="music-card">
+                    <iframe src="https://open.spotify.com/embed/track/5GRqKv2B5oTXMj14nZoYyj"
+                        width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <h3>Pyar huaa tha - ST Shashank</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="container" id="videos">
+        <h2>Latest Music Videos</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/J3KD6QR8dBM?si=TP2X4_Ey0GnNt_Q5"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Dil tu jaan tu x Iraadey - ST Shashank</h3>
+            </div>
+
+            <div class="video-card">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/IgYe_7k8k34?si=W0se_NKPn46PwFAF"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Aaj bhi 2 (Reprise) - ST Shashank</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="dark-section" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>
+                If you'd like to give feedback to STshashank, feel free to reach out via the form below:
+            </p>
+            <form action="send_feedback.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>
+            © 2024 ST Shashank. All Rights Reserved.
+        </p>
+        <div class="social">
+            <a href="https://www.instagram.com/shashankkkk_21/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/shashank.tripathi.5203577/" target="_blank">Facebook</a>
+            <a href="https://youtube.com/@stshashankofficial?si=giluvCEpIWHGjRZt" target="_blank">YouTube</a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navList = document.getElementById('nav-list');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
